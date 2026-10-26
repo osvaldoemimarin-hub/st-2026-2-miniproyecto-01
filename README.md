@@ -29,9 +29,7 @@ entrega pierde el 20 %; quien no aparezca aquí no cuenta como parte del grupo.
 
 | Nombre completo | Código | Correo institucional |
 |---|---|---|
-| | | |
-| | | |
-| | | |
+| Osvaldo Emilio Marín Mora | 94266189 | osvaldo_emi.marin@uao.edu.co |
 
 ## Entrega
 

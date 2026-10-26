@@ -1,0 +1,5 @@
+modelo,decision,RMSE,MAE,MAPE
+"SARIMAX(1, 1, 1)(1, 1, 1, 12) + exógenas",sin huecos; abr-2020 y may-2021 (cuarentena y paro) reemplazados por tendencia + estacional de la STL robusta,25279.41,20848.26,3.6
+"SARIMA(1, 1, 1)(1, 1, 1, 12)",sin huecos; abr-2020 y may-2021 (cuarentena y paro) reemplazados por tendencia + estacional de la STL robusta,28642.85,23854.23,4.16
+estacional ingenuo,sin huecos; abr-2020 y may-2021 (cuarentena y paro) reemplazados por tendencia + estacional de la STL robusta,43141.26,37837.01,6.64
+ingenuo,sin huecos; abr-2020 y may-2021 (cuarentena y paro) reemplazados por tendencia + estacional de la STL robusta,64594.38,53658.85,9.4
