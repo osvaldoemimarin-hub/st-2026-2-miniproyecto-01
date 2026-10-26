@@ -12,7 +12,7 @@ información pública y se puede usar citando la fuente. Es mensual y va de
 **octubre de 2008 a junio de 2026**: son **213 observaciones**, y los meses
 de 2026 son preliminares. La ficha completa está en `datos/README.md`.
 
-La elegimos porque cumple de sobra los mínimos y es interesante de modelar.
+Esta serie cumple de sobra los mínimos y es interesante de modelar.
 Tiene una tendencia fuerte, porque el sector porcícola colombiano casi se
 cuadruplicó en el periodo. Tiene una estacionalidad muy marcada, con el pico
 de diciembre por la demanda de fin de año. Y tiene choques identificables:
