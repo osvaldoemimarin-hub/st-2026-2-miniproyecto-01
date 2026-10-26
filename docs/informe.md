@@ -66,7 +66,7 @@ Corregido da RMSE 28 642,85, MAE 23 854,23 y MAPE 4,16 %. **La corrección no
 mejora el pronóstico; lo empeora un 3,2 % en RMSE.** Una lectura posible es
 esta: con los dos choques en los datos, el modelo estima coeficientes MA que
 descuentan más las sorpresas, y esa cautela le sirve en 2024-2026, que
-también tiene meses atípicos (2024-03, 2025-06). Mantenemos la corrección
+también tiene meses atípicos (2024-03, 2025-06). Mantengo la corrección
 por dos razones. Primera, con ella la identificación queda limpia: en la
 serie corregida, la ADF de `diff()` ya no rechaza (sección 4), mientras que
 en la original los dos desplomes hacían que `diff()` pareciera estacionaria
@@ -159,7 +159,7 @@ la raíz estacional:
 | `diff(12)` | 0 | 1 | c | −2,543 | 0,1054 | −0,20 |
 | `diff(12).diff()` | 1 | 1 | c | −4,138 | **0,0008** | −0,31 |
 
-**Elegimos d = 1 y D = 1.** La regla es tomar la versión con menos
+**Elegí d = 1 y D = 1.** La regla es tomar la versión con menos
 diferencias que cumpla dos condiciones: que la ADF rechace la raíz unitaria
 ($p<0{,}05$) y que la ACF en el rezago 12 no quede persistente
 ($r_{12}<0{,}5$). Ni `diff()` ni `diff(12)` rechazan ($p = 0{,}11$ en las
@@ -274,7 +274,7 @@ errores SARIMA:
 
 $$y_t = \beta\,x_t + \eta_t,\qquad \eta_t \sim \text{SARIMA}(1,1,1)(1,1,1)_{12}$$
 
-Probamos dos variables del calendario colombiano, del paquete `holidays`.
+Probé dos variables del calendario colombiano, del paquete `holidays`.
 Cada una se ajustó sobre toda la serie, con el mismo SARIMA:
 
 | Exógena | AIC | $\hat\beta$ (cabezas) | Valor p de $\beta$ | Ljung-Box p (12) | Ljung-Box p (24) |
@@ -282,7 +282,7 @@ Cada una se ajustó sobre toda la serie, con el mismo SARIMA:
 | festivos del mes | 1630,6 | −10 633 por festivo | 0,0000 | 0,0000 | 0,0000 |
 | **días hábiles** (lunes a viernes no festivos) | **1551,1** | **+8 106 por día hábil** | 0,0000 | **0,5709** | **0,1680** |
 
-Elegimos los **días hábiles**. Las plantas de beneficio sacrifican en días
+Elegí los **días hábiles**. Las plantas de beneficio sacrifican en días
 laborales: cada día hábil adicional suma unas **8 106 cabezas** al mes, con
 todo lo demás igual. La variable junta los festivos con la cantidad de
 fines de semana del mes, que varía entre 8 y 10, y ese segundo efecto es el

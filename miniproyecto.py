@@ -1,4 +1,4 @@
-"""Miniproyecto 1: la serie del grupo, de las líneas base al mejor modelo clásico.
+"""Miniproyecto 1: una serie propia, de las líneas base al mejor modelo clásico.
 
 Se corre de principio a fin con
 
